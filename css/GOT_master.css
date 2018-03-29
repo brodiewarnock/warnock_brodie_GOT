@@ -131,7 +131,7 @@ video {
 
 .controls {
   padding: 2em;
-  border: thin dashed white; 
+  border: thin dashed white;
 }
 
 [data-icon] {
