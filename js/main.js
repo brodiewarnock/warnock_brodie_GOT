@@ -8,12 +8,9 @@
       lightbox = document.querySelector('.lightbox'),
       closeLightBoxButton = lightbox.querySelector('.close-lightbox'),
       videoPlayer = document.querySelector('video'),
-<<<<<<< HEAD
       videoControls = document.querySelector('controls');
-=======
-      videoControls = doucment.querySelector('.controls'),
+      videoControls = document.querySelector('.controls'),
       imageBanner = document.querySelector('#houseImages');
->>>>>>> 456bf6e12cbbbf64d90c2bf79a42737019d070b7
 
   // functions in the middle
   function showHouseVideo() {
