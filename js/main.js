@@ -8,7 +8,12 @@
       lightbox = document.querySelector('.lightbox'),
       closeLightBoxButton = lightbox.querySelector('.close-lightbox'),
       videoPlayer = document.querySelector('video'),
+<<<<<<< HEAD
       videoControls = document.querySelector('controls');
+=======
+      videoControls = doucment.querySelector('.controls'),
+      imageBanner = document.querySelector('#houseImages');
+>>>>>>> 456bf6e12cbbbf64d90c2bf79a42737019d070b7
 
   // functions in the middle
   function showHouseVideo() {
@@ -21,6 +26,15 @@
     videoPlayer.src = `video/House-${houseName}.${videoPlayer.currentSrc.split('.')[1]}`;
     videoPlayer.load();
     videoPlayer.play();
+
+    scrollBanners(this.dataset.offset)
+  }
+
+  function scrollBanners(offset) {
+    //move the banner images to the left
+    let moveIt = offset * 600 + "px";
+
+    imageBanner.style.right = moveIt;
   }
 
   function closeLightBox() {
