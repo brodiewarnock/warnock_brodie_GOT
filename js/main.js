@@ -8,7 +8,7 @@
       lightbox = document.querySelector('.lightbox'),
       closeLightBoxButton = lightbox.querySelector('.close-lightbox'),
       videoPlayer = document.querySelector('video'),
-      videoControls = doucment.querySelector('controls');
+      videoControls = document.querySelector('controls');
 
   // functions in the middle
   function showHouseVideo() {
@@ -41,12 +41,11 @@
       videoPlayer.pause();
       theButton.dataset.icon = "play-circle";
       }
-
     }
 
   //Event handling at the bottom
   sigils.forEach(sigil => sigil.addEventListener('click', showHouseVideo));
-  closeLightBoxButton.addEventListener('click', closeLightBoxButton);
-  videoPlayer.addEventListener('ended', closeLightBoxButton);
+  closeLightBoxButton.addEventListener('click', closeLightBox);
+  videoPlayer.addEventListener('ended', closeLightBox);
   videoControls.addEventListener('click', pausePlay);
 })();
